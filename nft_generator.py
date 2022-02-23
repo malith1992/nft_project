@@ -19,10 +19,6 @@ import pathway_creator
 "metro cross" = "mtc"
  """
 
-road_tiles_normal = ["1", "2"]
-road_tiles_bridge = ["3", "4"]
-river_tiles = ["5", "6"]
-
 number = [0, 1, 2, 3, 4, 5, 6, 7]
 number_weights = [10, 10, 10, 10, 10, 10, 10, 10]
 
