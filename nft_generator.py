@@ -26,7 +26,7 @@ side = ["column", "row"]
 side_weights = [50, 50]
 
 pathway = ["road", "river", "metro"]
-pathway_weights = [60, 30, 10]
+pathway_weights = [30, 30, 30]
 
 
 # grid = np.indices((8, 8))[0]
@@ -83,7 +83,7 @@ def create_new_grid(duplicate_count):
         grid = pathway_creator_obj.second_metro(second_side, grid, random_number)
 
     if grid in all_grids:
-        print("Duplicate grid")
+        #print("Duplicate grid")
         duplicate_count = duplicate_count + 1
         duplicate_index = all_grids.index(grid)
         #print(DataFrame(grid))
@@ -96,10 +96,12 @@ def create_new_grid(duplicate_count):
 
 all_grids = []
 duplicate_count = 0
-for i in range(500):
-    new_grid,duplicate_count = create_new_grid(duplicate_count)
-
-    all_grids.append(new_grid)
+for i in range(1000):
+    try:
+        new_grid,duplicate_count = create_new_grid(duplicate_count)
+        all_grids.append(new_grid)
+    except:
+        continue
 
 
 print("All grid count ", len(all_grids))
