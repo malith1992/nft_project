@@ -5,16 +5,16 @@ import numpy as np
 import pathway_creator
 
 """
-"horizontal_road" = "hrd"
-"vertical_road" = "vrd"
-"horizontal_river" = "hrv"
-"vertical_river" = "vrv"
+"horizontal road" = "hrd"
+"vertical road" = "vrd"
+"horizontal river" = "hrv"
+"vertical river" = "vrv"
 "horizontal metro" = "hmt"
 "vertical metro" = "vmt"
 
-"horizontal_bridge" = "hbd"
-"vertical_bridge" = "vbd"
-"river_cross" = "rvc"
+"horizontal bridge" = "hbd"
+"vertical bridge" = "vbd"
+"river cross" = "rvc"
 "road cross" = "rdc"
 "metro cross" = "mtc"
  """
