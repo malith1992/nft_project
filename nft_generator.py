@@ -106,3 +106,6 @@ for i in range(1000):
 
 print("All grid count ", len(all_grids))
 print("Duplicate Counted ",duplicate_count)
+
+for i in range(10):
+    print(DataFrame(all_grids[i]))
